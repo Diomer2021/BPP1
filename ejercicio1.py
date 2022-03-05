@@ -1,3 +1,5 @@
+from functools import reduce
+
 row = 8
 cols = 4
 
@@ -20,3 +22,8 @@ def es_primo(n):
 num_primos = list(filter(es_primo, elem_maximos))
 print('Los primos son: ', num_primos)
 
+def sumatorio(a,b):
+    return a+b 
+
+resultado_suma = reduce(sumatorio, num_primos)
+print('El resultado de la suma es: ', resultado_suma)
